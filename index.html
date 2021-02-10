@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form name="size" onchange="onInputChange()">
+    <p><b>Size:</b></p>
+    <input id="s" type="radio" name="size" value="S"><label for="s">S</label><br>
+    <input id="m" type="radio" name="size" value="M"><label for="m">M</label><br>
+    <input id="l" type="radio" name="size" value="L"><label for="l">L</label><br>
+</form>
+
+
+<form name="color" action="" onchange="onInputChange()">
+    <p><b>Color:</b></p>
+    <input type="checkbox" id="1" value="1"><label for="1">1</label><br>
+    <input type="checkbox" id="2" value="2"><label for="2">2</label><br>
+    <input type="checkbox" id="3" value="3"><label for="3">3</label><br>
+    <input type="checkbox" id="4" value="4"><label for="4">4</label><br>
+    <input type="checkbox" id="5" value="5"><label for="5">5</label>
+</form>
+
+<form name="manufacturer" action="" onchange="onInputChange()">
+    <p><b>Manufacturer:</b></p>
+        <select multiple size="">
+            <option value="aaa">aaa</option>
+            <option value="b&c">b&c</option>
+            <option value="ddd">ddd</option>
+            <option value="eee">eee</option>
+        </select>
+</form>
+
+<form name="color" action="">
+    <p><b>Распродажа:</b></p>
+    <input type="checkbox" id="sales" checked><label for="sales">1</label>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
